@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Andrea Jiménez - Urología</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50">
+  <div id="root"></div>
+
+  <script type="text/babel">
+
+    function UrologaAndreaJimenez() {
+      return (
+        <div className="min-h-screen bg-slate-50 text-slate-800 font-sans">
+          <header className="bg-white shadow-md">
+            <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-full bg-gradient-to-br from-slate-300 to-slate-600 flex items-center justify-center text-white text-xl font-bold">
+                  AJ
+                </div>
+                <div>
+                  <h1 className="text-xl font-semibold">Dra. Andrea Jiménez</h1>
+                  <p className="text-sm text-slate-500">Especialista en Urología | Atención clínica y procedimientos</p>
+                </div>
+              </div>
+              <nav className="space-x-6 text-sm text-slate-600">
+                <a href="#servicios" className="hover:text-slate-600">Servicios</a>
+                <a href="#resultados" className="hover:text-slate-600">Resultados</a>
+                <a href="#contacto" className="hover:text-slate-600">Contacto</a>
+              </nav>
+            </div>
+          </header>
+
+          <main className="max-w-6xl mx-auto px-6 py-10">
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-extrabold leading-tight">Cuidado urológico integral con enfoque humano</h2>
+                <p className="mt-4 text-slate-600">La Dra. Andrea Jiménez ofrece evaluación, diagnóstico y tratamiento de condiciones urológicas para adultos. Atención privada, confidencial y basada en evidencia.</p>
+
+                <ul className="mt-6 space-y-2">
+                  <li className="text-sm">• Evaluación de dolor testicular, epididimitis y patologías de vías urinarias</li>
+                  <li className="text-sm">• Manejo de infecciones urinarias y soporte diagnóstico</li>
+                  <li className="text-sm">• Asesoría en salud sexual y reproductiva</li>
+                </ul>
+
+                <div className="mt-6 flex gap-4">
+                  <a href="#contacto" className="px-5 py-2 rounded-md bg-slate-600 text-white text-sm font-medium">Solicitar cita</a>
+                  <a href="#resultados" className="px-5 py-2 rounded-md border border-slate-300 text-sm">Ver resultados</a>
+                </div>
+              </div>
+
+              <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                <img src="doctor.jpg" alt="Dra Andrea Jimenez" className="w-full object-cover h-64" />
+              </div>
+            </section>
+
+            <section id="servicios" className="mb-12">
+              <h3 className="text-2xl font-bold mb-4">Servicios</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="p-5 bg-white rounded-lg shadow-sm">
+                  <h4 className="font-semibold">Consultas y diagnóstico</h4>
+                  <p className="text-sm text-slate-600 mt-2">Historia clínica, examen físico y revisión de exámenes.</p>
+                </div>
+                <div className="p-5 bg-white rounded-lg shadow-sm">
+                  <h4 className="font-semibold">Manejo de infecciones</h4>
+                  <p className="text-sm text-slate-600 mt-2">Tratamiento especializado de infecciones urinarias.</p>
+                </div>
+                <div className="p-5 bg-white rounded-lg shadow-sm">
+                  <h4 className="font-semibold">Salud sexual</h4>
+                  <p className="text-sm text-slate-600 mt-2">Asesoría personalizada en salud sexual y reproductiva.</p>
+                </div>
+              </div>
+            </section>
+
+            <section id="contacto" className="mb-12 bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-2xl font-bold mb-4">Contacto</h3>
+              <p className="text-sm text-slate-600">Clínica Urológica Dra. Andrea Jiménez</p>
+              <p className="mt-2 text-sm">Teléfono: +57 315 7360073</p>
+              <p className="mt-1 text-sm">Correo: andrea.jimenez@urologia.clinic</p>
+            </section>
+
+            <footer className="text-sm text-slate-500 py-6 text-center">© 2025 Dra. Andrea Jiménez — Clínica Urológica.</footer>
+          </main>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<UrologaAndreaJimenez />);
+  </script>
+</body>
+</html>
